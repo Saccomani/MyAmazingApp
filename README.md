@@ -39,6 +39,12 @@ Not applicable
 ## Contact
 Rafael Sacomani - @rafael.saccomani (instagram)
 
-Windows Screen
+Windows Screen:
+
 ![image](https://github.com/Saccomani/MyAmazingApp/assets/3049349/50c0f6bd-ca8a-42b6-ac4b-3e4c9655bcf0)
+
+Mobile:
+
+![image](https://github.com/Saccomani/MyAmazingApp/assets/3049349/11c4cd5b-9f67-4863-b48e-586957cf6207)
+
 
