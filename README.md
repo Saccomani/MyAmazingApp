@@ -1,42 +1,44 @@
-# RommaApp
+# MyAmazingMauiApp - Basic project for template
 
-RommaApp é um aplicativo moderno e responsivo desenvolvido com .NET MAUI e .NET 8.0. Este projeto está estruturado para promover uma arquitetura limpa e separação de preocupações, facilitando a manutenção e expansão futuras.
+This is a base project with layer separations and responsibilities to facilitate when creating a new project in .net maui.
 
-## Arquitetura do Projeto
+## Project Architecture
 
-O projeto é dividido em várias camadas para garantir a separação de responsabilidades:
+The project is divided into several layers to ensure the separation of responsibilities:
 
-- **App.Core**: Esta camada contém a lógica de negócios central, incluindo view models, models, helpers, provedores de injeção de dependência e interfaces.
-- **App.Data**: Responsável pela conexão com o banco de dados e implementação das repositórios.
-- **App.Domain**: Contém toda a modelagem de negócios, definindo as entidades e regras de negócio principais.
-- **App.ErrorHandling**: Gerencia a captura de erros e a geração de logs para facilitar o diagnóstico e a correção de problemas.
-- **RommaApp**: A camada de apresentação do aplicativo, desenvolvida com .NET MAUI para oferecer uma experiência de usuário rica e responsiva em múltiplas plataformas.
+- **App.Core**: This layer contains the core business logic, including view models, models, helpers, dependency injection providers, and interfaces.
+- **App.Data**: Responsible for database connection and repository implementation.
+- **App.Domain**: Contains all the business modeling, defining the main entities and business rules.
+- **App.ErrorHandling**: Manages error catching and log generation to facilitate problem diagnosis and correction.
+- **MyAmazingApp**: The application's presentation layer, developed with .NET MAUI to offer a rich and responsive user experience across multiple platforms.
 
-## Iniciando
+## Getting Started
 
-Para começar a trabalhar com o RommaApp, siga estes passos:
+To start working with MyAmazingMauiApp, follow these steps:
 
-### Pré-requisitos
+### Prerequisites
 
 - .NET 8.0 SDK
-- Visual Studio 2022 ou superior com suporte a .NET MAUI
+- Visual Studio 2022 or higher with .NET MAUI support
 
-### Configuração do Ambiente
+### Environment Setup
 
-1. Clone o repositório para a sua máquina local.
-2. Abra a solução no Visual Studio.
-3. Restaure os pacotes NuGet.
-4. Compile a solução para verificar se tudo está configurado corretamente.
+1. Clone the repository to your local machine.
+2. Open the solution in Visual Studio.
+3. Restore the NuGet packages.
+4. Build the solution to verify everything is set up correctly.
 
-### Executando o Projeto
+### Running the Project
 
-Para executar o RommaApp, defina o projeto `RommaApp` como o projeto de inicialização e pressione F5. O Visual Studio compilará o projeto e iniciará o aplicativo em um emulador ou dispositivo físico, dependendo da sua configuração.
+To run MyAmazingMauiApp, set the `MyAmazingMauiApp` project as the startup project and press F5. Visual Studio will compile the project and start the application on an emulator or physical device, depending on your setup.
 
+## License
 
-## Licença
+Not applicable
 
-Não se aplica
+## Contact
+Rafael Sacomani - @rafael.saccomani (instagram)
 
-## Contato
+Windows Screen
+![image](https://github.com/Saccomani/MyAmazingApp/assets/3049349/50c0f6bd-ca8a-42b6-ac4b-3e4c9655bcf0)
 
-Rafael Sacomani - 11970784168 ou r.saccomani@gmail.com
