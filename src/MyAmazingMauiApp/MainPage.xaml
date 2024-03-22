@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyAmazingMauiApp.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:App.Core.Models;assembly=App.Core"
+    xmlns:viewModels="clr-namespace:App.Core;assembly=App.Core"
+    x:DataType="viewModels:ProductsListViewModel"
+    Shell.NavBarIsVisible="True"
+    Shell.TabBarIsVisible="False">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="ToolbarItem_Clicked" Text="+" />
+    </ContentPage.ToolbarItems>
+
+    <Grid Padding="20" RowDefinitions="50,*,50">
+        <Label
+            Margin="0,0,0,10"
+            FontFamily="Bold"
+            FontSize="Large"
+            Text="Listagem de produtos" />
+
+        <CollectionView
+            Grid.Row="1"
+            ItemsSource="{Binding Products}"
+            SelectionChanged="CollectionView_SelectionChanged"
+            SelectionMode="Single">
+            <CollectionView.Header>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox CheckedChanged="CheckBox_CheckedChanged" />
+                        <Label Text="Todos" VerticalTextAlignment="Center" />
+                    </StackLayout>
+                    <BoxView HeightRequest="1" />
+                </StackLayout>
+            </CollectionView.Header>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:ProductModel">
+                    <Grid ColumnDefinitions="40,*">
+                        <CheckBox
+                            Grid.Column="0"
+                            CheckedChanged="RefreshCount"
+                            IsChecked="{Binding Selected}"
+                            VerticalOptions="CenterAndExpand" />
+
+                        <StackLayout Grid.Column="1">
+                            <Label
+                                FontFamily="Semibold"
+                                FontSize="{OnIdiom Desktop='22',
+                                                   Default='Small'}"
+                                Text="{Binding Descripton}" />
+                            <Label FontSize="Default" Text="{Binding Price, StringFormat='{0:C}'}" />
+                        </StackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout
+                    HorizontalItemSpacing="5"
+                    Orientation="Vertical"
+                    Span="1"
+                    VerticalItemSpacing="5" />
+            </CollectionView.ItemsLayout>
+        </CollectionView>
+
+        <Button
+            Grid.Row="2"
+            Clicked="OpenSelectedProducts_Clicked"
+            Text="{Binding SelectedItemsText}">
+            <Button.Triggers>
+                <DataTrigger
+                    Binding="{Binding SelectedItemsText}"
+                    TargetType="Button"
+                    Value="Produtos Selecionados (0)">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Button.Triggers>
+        </Button>
+    </Grid>
+</ContentPage>

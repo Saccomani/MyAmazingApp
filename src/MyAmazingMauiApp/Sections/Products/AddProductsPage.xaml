@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyAmazingMauiApp.Sections.AddProductsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:App.Core.ViewModels;assembly=App.Core"
+    Title="Cadastrar produto"
+    x:DataType="viewModels:CreateProductViewModel">
+    <StackLayout Padding="20">
+
+        <Label Text="Descrição do produto:" />
+        <Entry
+            Margin="0,0,0,10"
+            Placeholder="Descrição do produto"
+            Text="{Binding Description}" />
+        <Label Text="Preço:" />
+        <Entry
+            Keyboard="Numeric"
+            Placeholder="Preço"
+            Text="{Binding Price}" />
+        <Button
+            Command="{Binding CreateNewProductCommand}"
+            HorizontalOptions="EndAndExpand"
+            Text="Salvar"
+            WidthRequest="200" />
+
+        <Label
+            x:Name="lblErro"
+            Margin="0,30,0,0"
+            FontSize="12"
+            HorizontalTextAlignment="Center"
+            TextColor="Red" />
+    </StackLayout>
+</ContentPage>

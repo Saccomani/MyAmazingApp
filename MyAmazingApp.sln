@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{78CC2029-84EB-44FF-9094-376DFA7C8775}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Core", "src\App.Core\App.Core.csproj", "{A249FC2A-2B4B-4111-9048-1C1B7D43CD30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Data", "src\App.Data\App.Data.csproj", "{403E5E89-473F-4EEE-87BE-25FD9D3882C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Domain", "src\App.Domain\App.Domain.csproj", "{5958177E-E1C7-47B8-ABFF-CA6CF1A7588B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.ErrorHandling", "src\App.ErrorHandling\App.ErrorHandling.csproj", "{B9A10843-4397-43F8-B3E4-47119B73987E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAmazingApp", "src\MyAmazingMauiApp\MyAmazingApp.csproj", "{EA195648-18A6-40D2-8155-6D5F89CB462E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Domain.Tests", "src\UnitTests\App.Domain.Tests\App.Domain.Tests.csproj", "{23006617-1EA9-4690-B1C2-7A43C9A019FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Core.Tests", "src\UnitTests\App.Core.Tests\App.Core.Tests.csproj", "{CBC16FAB-A949-4CFE-B039-1D9D905C33B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A249FC2A-2B4B-4111-9048-1C1B7D43CD30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A249FC2A-2B4B-4111-9048-1C1B7D43CD30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A249FC2A-2B4B-4111-9048-1C1B7D43CD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A249FC2A-2B4B-4111-9048-1C1B7D43CD30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{403E5E89-473F-4EEE-87BE-25FD9D3882C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403E5E89-473F-4EEE-87BE-25FD9D3882C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403E5E89-473F-4EEE-87BE-25FD9D3882C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403E5E89-473F-4EEE-87BE-25FD9D3882C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5958177E-E1C7-47B8-ABFF-CA6CF1A7588B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5958177E-E1C7-47B8-ABFF-CA6CF1A7588B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5958177E-E1C7-47B8-ABFF-CA6CF1A7588B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5958177E-E1C7-47B8-ABFF-CA6CF1A7588B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A10843-4397-43F8-B3E4-47119B73987E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A10843-4397-43F8-B3E4-47119B73987E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A10843-4397-43F8-B3E4-47119B73987E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A10843-4397-43F8-B3E4-47119B73987E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA195648-18A6-40D2-8155-6D5F89CB462E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA195648-18A6-40D2-8155-6D5F89CB462E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA195648-18A6-40D2-8155-6D5F89CB462E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EA195648-18A6-40D2-8155-6D5F89CB462E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA195648-18A6-40D2-8155-6D5F89CB462E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23006617-1EA9-4690-B1C2-7A43C9A019FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23006617-1EA9-4690-B1C2-7A43C9A019FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23006617-1EA9-4690-B1C2-7A43C9A019FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23006617-1EA9-4690-B1C2-7A43C9A019FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC16FAB-A949-4CFE-B039-1D9D905C33B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC16FAB-A949-4CFE-B039-1D9D905C33B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC16FAB-A949-4CFE-B039-1D9D905C33B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC16FAB-A949-4CFE-B039-1D9D905C33B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23006617-1EA9-4690-B1C2-7A43C9A019FB} = {78CC2029-84EB-44FF-9094-376DFA7C8775}
+		{CBC16FAB-A949-4CFE-B039-1D9D905C33B8} = {78CC2029-84EB-44FF-9094-376DFA7C8775}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D30DB785-23FC-4177-BF76-78C836B0F51B}
+	EndGlobalSection
+EndGlobal
