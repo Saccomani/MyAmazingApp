@@ -1,6 +1,13 @@
-# MyAmazingMauiApp - Basic project for template
+# MyAmazingMauiApp - my starter kit for new projects in .net MAUI
 
 This is a base project with layer separations and responsibilities to facilitate when creating a new project in .net maui.
+
+Include in example
+
+- MVVM
+- Repository Partner
+- UnitTests
+- Domain Pattern
 
 ## Project Architecture
 
